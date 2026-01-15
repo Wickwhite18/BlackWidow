@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM alpine:3.23.2
 
 RUN apk --update add --no-cache python3 py3-requests py3-pip py3-lxml py3-requests openssl ca-certificates
 RUN apk --update add --virtual build-dependencies python3-dev build-base wget git \
